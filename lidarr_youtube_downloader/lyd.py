@@ -596,6 +596,9 @@ def run(
     music_path = path
     headers = {"X-Api-Key": api_key}
     load_seen()
-
     iterative = True if stop is not None else False
     iterate_missing(artist, iterative)
+
+if __name__ == "__main__":
+    print("Starting Lidarr Youtube Downloader")
+    app()
