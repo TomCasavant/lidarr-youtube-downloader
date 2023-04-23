@@ -1,5 +1,13 @@
+version: '3.3'
 services:
-  lidarr-youtube-dl:
-    image: lidarr/youtube-dl
-    build:
-      dockerfile: Dockerfile
+    lyd:
+        volumes:
+            - '/path/to/music:/path/to/music'
+            - '/path/to/db/file:/path/to/db/file'
+        environment:
+            - LIDARR_URL=http://HOST_IP:8686
+            - LIDARR_API_KEY=771de60596e946f6b3e5e6f5fb6fd729
+            - LIDARR_DB=/path/to/lidarr/lidarr.db
+            - LIDARR_MUSIC_PATH=/music
+        container_name: lyd
+        image: lyd
