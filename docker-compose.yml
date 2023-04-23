@@ -9,4 +9,4 @@ services:
       - LIDARR_API_KEY=771de60596e946f6b3e5e6f5fb6fd729
       - LIDARR_DB=/path/to/lidarr/lidarr.db
       - LIDARR_MUSIC_PATH=/music
-    context: 'https://github.com/TomCasavant/lidarr-youtube-downloader.git'
+    context: 'https://github.com/TomCasavant/lidarr-youtube-downloader.git#:.'
