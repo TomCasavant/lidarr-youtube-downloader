@@ -1,0 +1,6 @@
+services:
+  lidarr-youtube-dl:
+    image: lidarr/youtube-dl
+    build:
+      context: backend
+      dockerfile: Dockerfile
