@@ -10,4 +10,3 @@ services:
             - LIDARR_DB=/path/to/lidarr/lidarr.db
             - LIDARR_MUSIC_PATH=/music
         container_name: lyd
-        image: lyd
